@@ -20,6 +20,7 @@
 
                 Console.WriteLine("ASC:");
 
+
                 foreach(int item in outputasc)
                 {
                     Console.WriteLine(item);
