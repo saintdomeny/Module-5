@@ -70,7 +70,6 @@
             {
                 User.HasAPet = false;
             }
-
             User.Pets = GetPetNames(ammount);//Метод, запрашивающий клички животных. Если ammount 0 - идем дальше.
             do
             {
@@ -84,8 +83,9 @@
 
             User.FavColorsList = GetFavColors(ammount);//Метод, запрашивающий список любимых цветов.
 
-            var tuple = (Name: User.Name, LastName: User.LastName, Age: User.Age, HasAPet: User.HasAPet, PetsCount: User.PetsCount, Pets: User.Pets, FavColorsCount: User.FavColorsCount, User.FavColorsList);//кортеж
-            return tuple;
+            /*var tuple = (Name: User.Name, LastName: User.LastName, Age: User.Age, HasAPet: User.HasAPet, PetsCount: User.PetsCount, Pets: User.Pets, FavColorsCount: User.FavColorsCount, User.FavColorsList);//кортеж
+            return tuple; тоже работает.*/
+            return User;
         }
 
         static bool CheckNum(string number, out int corrnumber)
